@@ -4,5 +4,20 @@
 */
 
 :root {
-  --accent-color: #FF0070;
+  --accent-color: rgba(255, 0, 112, 1);
+
+  --title-color: rgba(219, 0, 255, 1);
+  --title-shadow-color: rgba(255, 0, 112, 1);
+  --text-color-in-accent: rgba(0, 0, 40, 1);
+  --text-color: rgba(241, 178, 206, 1);
+
+  --button-border-color: rgba(255, 0, 112, 1);
+  --button-hover-color: rgba(255, 0, 112, 0.4);
+
+  --bg-image: url(../images/cover-image-dark.png);
+  --bg-color: rgba(0, 0, 40, 1);
+
+  --g-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
+
+
