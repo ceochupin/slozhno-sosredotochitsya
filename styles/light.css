@@ -1,39 +1,46 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  --accent-color: rgba(255, 141, 203, 1);
-  --title-color: rgba(255, 194, 230, 1);
-  --title-shadow-color: rgba(255, 141, 203, 1);
-  --text-color-in-accent: rgba(53, 52, 48, 1);
-  --text-color: rgba(53, 52, 48, 1);
-  --button-border-color: rgba(53, 52, 48, 1);
-  --button-hover-color: rgba(50, 49, 45, 0.4);
-
-  --bg-image: url(../images/cover-image-light.png);
+  --accent-color-main: rgba(53, 52, 48, 1);
+  --accent-color-second: rgba(255, 141, 203, 1);
   --bg-color: rgba(255, 241, 247, 1);
+  --bg-image: url(../images/cover-image-light.png);
+  --hover-menu-color: rgba(50, 49, 45, 0.4);
+  --text-color: rgba(53, 52, 48, 1);
+  --title-accent-color: rgba(53, 52, 48, 1);
+  --title-color: rgba(255, 194, 230, 1);
+  --title-shadow: rgba(255, 141, 203, 1);
+}
+
+.theme_light .header__decorated {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --accent-color: rgba(255, 141, 203, 1);
-    --title-color: rgba(255, 194, 230, 1);
-    --title-shadow-color: rgba(255, 141, 203, 1);
-    --text-color-in-accent: rgba(53, 52, 48, 1);
-    --text-color: rgba(53, 52, 48, 1);
-    --button-border-color: rgba(53, 52, 48, 1);
-    --button-hover-color: rgba(50, 49, 45, 0.4);
-  
-    --bg-image: url(../images/cover-image-light.png);
+    --accent-color-main: rgba(53, 52, 48, 1);
+    --accent-color-second: rgba(255, 141, 203, 1);
     --bg-color: rgba(255, 241, 247, 1);
+    --bg-image: url(../images/cover-image-light.png);
+    --hover-menu-color: rgba(50, 49, 45, 0.4);
+    --text-color: rgba(53, 52, 48, 1);
+    --title-accent-color: rgba(53, 52, 48, 1);
+    --title-color: rgba(255, 194, 230, 1);
+    --title-shadow: rgba(255, 141, 203, 1);
+  }
+
+  .theme_light .header__decorated,
+  .theme_auto .header__decorated {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) and (width >= 64rem) {
+  :root {
+    --title-shadow: rgba(255, 0, 112, 1);
   }
 }
 
 @media (width >= 64rem) {
-  .page.theme_light  {
-    --title-shadow-color: rgba(255, 0, 112, 1);
+  .page.theme_light {
+    --title-shadow: rgba(255, 0, 112, 1);
   }
 }
