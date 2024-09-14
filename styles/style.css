@@ -1,5 +1,9 @@
 .page {
   padding-inline: var(--g-padding, 0.625rem);
+  font-family: "IBM Plex mono", monospace;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.3;
   background-color: var(--bg-color, rgba(0, 0, 40, 1));
   background-image: var(--bg-image, url(../images/cover-image-dark.png));
   background-repeat: no-repeat;
@@ -310,8 +314,8 @@
   }
 
   .content__column-items {
-    grid-column: span 3;
     grid-template-columns: repeat(3, 1fr);
+    grid-column: span 3;
     align-items: start;
   }
 }
