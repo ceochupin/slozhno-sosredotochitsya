@@ -1,10 +1,8 @@
 :root {
-  --g-padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
-
   --accent-color-main: rgba(255, 0, 112, 1);
   --accent-color-second: rgba(255, 0, 112, 1);
-  --bg-color: rgba(0, 0, 40, 1);
-  --bg-image: url(../images/cover-image-dark.png);
+  --bg-color: #000028;
+  --bg-image: url(./images/cover-image-dark.png);
   --hover-menu-color: rgba(255, 0, 112, 0.4);
   --text-color: rgba(241, 178, 206, 1);
   --title-accent-color: rgba(0, 0, 40, 1);

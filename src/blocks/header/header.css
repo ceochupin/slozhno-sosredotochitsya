@@ -1,0 +1,15 @@
+.header {
+  display: grid;
+  grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
+  align-items: center;
+  padding: 10px;
+  block-size: 100vh;
+  min-block-size: 668px;
+}
+
+@media (width >= 768px) {
+  
+  .header {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
