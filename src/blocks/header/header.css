@@ -2,7 +2,6 @@
   display: grid;
   grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
   align-items: center;
-  padding: 10px;
   block-size: 100vh;
   min-block-size: 668px;
 }

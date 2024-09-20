@@ -1,0 +1,20 @@
+.link {
+  display: inline-block;
+  line-height: 0.9;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color-second, rgb(255 0 112));
+  color: currentColor;
+}
+
+.link:hover {
+  border-block-end: 1px solid currentColor;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  border: none;
+  outline: 1px solid currentColor;
+}

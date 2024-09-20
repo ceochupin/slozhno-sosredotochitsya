@@ -1,0 +1,39 @@
+.decorated-zone {
+  position: relative;
+  color: var(--accent-color-main, rgb(255 0 112));
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::before {
+  border-inline-end: 1px solid currentColor;
+  border-block-start: 1px solid currentColor;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+}
+
+.decorated-zone::after {
+  border-inline-start: 1px solid currentColor;
+  border-block-end: 1px solid currentColor;
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
+}
+
+@media (width >= 768px) {
+  
+  .decorated-zone::before {
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+  }
+  
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+  }
+}

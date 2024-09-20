@@ -1,0 +1,25 @@
+.header__theme-menu-button {
+  border: 1px solid transparent;
+  padding: 2px 13px 4px;
+  color: var(--accent-color-main, rgb(255 0 112));
+  line-height: 1;
+  text-transform: lowercase;
+  background: transparent;
+  cursor: pointer;
+  min-inline-size: 70px;
+  appearance: none;
+  outline: none;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--hover-menu-color, rgb(255 0 112 / 0.4));
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid currentColor;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid currentColor;
+  pointer-events: none;
+}

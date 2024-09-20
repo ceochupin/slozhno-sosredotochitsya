@@ -1,0 +1,11 @@
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+}
+
+@media (width >= 1024px) {
+
+  .header__theme-menu-list {
+    display: flex;
+  }
+}

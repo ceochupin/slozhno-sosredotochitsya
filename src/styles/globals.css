@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'IBM Plex mono';
+  src: url(../fonts/IBMPlexMono-Regular.woff) format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex mono';
+  src: url(../fonts/IBMPlexMono-Bold.woff) format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -8,9 +22,9 @@ body {
   margin: 0 auto;
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  font-family: "IBM Plex mono", monospace;
+  font-family: 'IBM Plex mono', monospace;
   font-weight: 400;
-  font-size: 1.125rem;
+  font-size: 18px;
   line-height: 1.3;
 }
 

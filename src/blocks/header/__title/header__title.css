@@ -1,0 +1,14 @@
+.header__title {
+  margin-inline: 10px;
+  margin-block-end: 10px;
+}
+
+@media (width >= 768px) {
+
+  .header__title {
+    grid-column: 2;
+    margin-inline-start: 0;
+    margin-inline-end: 20px;
+    margin-block-end: 20px;
+  }
+}

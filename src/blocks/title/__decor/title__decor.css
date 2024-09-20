@@ -1,0 +1,4 @@
+.title__decor {
+  color: var(--title-accent-color, rgb(0 0 40));
+  background-color: var(--accent-color-second, rgb(255 0 112));
+}
