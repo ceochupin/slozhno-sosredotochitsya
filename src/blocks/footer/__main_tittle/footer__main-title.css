@@ -1,0 +1,4 @@
+.footer__main-title {
+  margin-inline: 10px;
+  text-shadow: 4px 4px 0 var(--title-shadow, rgb(255 0 112));
+}

@@ -1,0 +1,4 @@
+.content__item {
+  display: grid;
+  gap: 10px;
+}

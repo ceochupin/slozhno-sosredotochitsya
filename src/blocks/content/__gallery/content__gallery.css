@@ -1,0 +1,13 @@
+.content__gallery {
+  display: grid;
+  gap: 10px;
+}
+
+@media (width >= 768px) {
+
+  .content__gallery {
+    grid-column: span 3;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}

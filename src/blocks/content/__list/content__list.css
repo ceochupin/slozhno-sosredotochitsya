@@ -1,0 +1,11 @@
+.content__list {
+  display: grid;
+  gap: 20px;
+}
+
+@media (width >= 1024px) {
+
+  .content__list {
+    grid-column: span 2;
+  }
+}
