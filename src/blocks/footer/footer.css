@@ -1,7 +1,16 @@
+/* Стили для подвала */
+
 .footer {
   display: grid;
   align-items: center;
   justify-items: center;
-  block-size: 100vh;
+  block-size: 100dvb;
   min-block-size: 668px;
+}
+
+
+/* Стилизация заголовка в подвале */
+
+.footer__headline {
+  text-shadow: 2px 2px 0 var(--title-shadow, rgb(255 0 112));
 }

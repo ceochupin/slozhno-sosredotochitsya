@@ -1,8 +1,11 @@
+/* Стили и сетка для шапки */
+
 .header {
+  position: relative;
   display: grid;
   grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
   align-items: center;
-  block-size: 100vh;
+  block-size: 100dvb;
   min-block-size: 668px;
 }
 
@@ -10,5 +13,142 @@
   
   .header {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* Меню */
+
+.header__theme-menu {
+  justify-self: end;
+  margin-block-start: 10px;
+  margin-inline: 10px;  
+}
+
+@media (width >= 768px) {
+  
+  .header__theme-menu {
+    grid-column: span 2;    
+    margin-block-start: 20px;
+    margin-inline: 20px;
+  }
+}
+
+@media (width >= 1024px) {
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+}
+
+
+/* Сетка для кнопок меню */
+
+.header__theme-menu-list {
+  display: grid;
+  gap: 10px;
+}
+
+@media (width >= 1024px) {
+
+  .header__theme-menu-list {
+    display: flex;
+  }
+}
+
+
+/* Кнопки меню */
+
+.header__theme-menu-button {
+  border: 1px solid transparent;
+  padding: 2px 13px 4px;
+  color: var(--accent-color-main, rgb(255 0 112));
+  line-height: 1;
+  text-transform: lowercase;
+  background: transparent;
+  cursor: pointer;
+  min-inline-size: 70px;
+  appearance: none;
+  outline: none;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--hover-menu-color, rgb(255 0 112 / 0.4));
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid currentColor;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid currentColor;
+  pointer-events: none;
+}
+
+
+/* Стили главного заголовока в шапке */
+
+.header__headline {
+  margin-inline: 10px;
+  text-shadow: 4px 4px 0 var(--title-shadow, rgb(255 0 112));
+}
+
+@media (width >= 768px) {
+
+  .header__headline {
+    margin-inline: 0;
+    grid-column: span 2;
+  }
+}
+
+
+/* Стили для дескриптора */
+
+.header__title {
+  margin-inline: 10px;
+  margin-block-end: 10px;
+}
+
+@media (width >= 768px) {
+
+  .header__title {
+    grid-column: 2;
+    margin-inline-start: 0;
+    margin-inline-end: 20px;
+    margin-block-end: 20px;
+  }
+}
+
+
+/* Декоративный элемент REC */
+
+.header__decorated {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent-color-main, rgba(255 0 112));
+  line-height: 1.5625;;
+  text-transform: uppercase;
+  inset-inline-end: 20px;
+  inset-block-start: 10px;
+}
+
+.header__decorated::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px currentColor;
+  background-color: currentColor;
+  inline-size: 9px;
+  block-size: 9px;
+}
+
+@media (width >= 768px) {
+
+  .header__decorated {
+    inset-inline-end: 30px;
+    inset-block-start: 20px;
   }
 }

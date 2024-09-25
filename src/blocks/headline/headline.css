@@ -1,4 +1,6 @@
-.main-title {
+/* общие стили главного заголовка */
+
+.headline {
   color: var(--title-color, #db00ff);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.825;
@@ -6,7 +8,7 @@
 
 @media (width >= 768px) {
 
-  .main-title {
+  .headline {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }

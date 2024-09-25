@@ -12,13 +12,20 @@
     "fixAll": "npm run format && npm run lintfix",
     "build": "gulp build",
     "dev": "gulp",
-    "fixAndBuild": "npm run fixAll && npm run build"
+    "fixAndBuild": "npm run fixAll && npm run build",
+    "start-wp": "webpack serve --open --config webpack.dev.js",
+    "build-wp": "webpack --config webpack.prod.js"
   },
   "author": "Vladimir Chupin",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
     "autoprefixer": "^10.4.20",
+    "babel-loader": "^9.2.1",
     "browser-sync": "^3.0.2",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
     "cssnano": "^7.0.6",
     "fs-extra": "^11.2.0",
     "gulp": "^5.0.0",
@@ -29,11 +36,19 @@
     "gulp-postcss": "^10.0.0",
     "gulp-replace": "^1.1.4",
     "gulp-uglify": "^3.0.2",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.1",
     "path": "^0.12.7",
     "postcss": "^8.4.47",
     "postcss-combine-media-query": "^1.0.1",
+    "postcss-loader": "^8.1.1",
     "prettier": "^3.3.3",
-    "stylelint": "^16.9.0"
+    "stylelint": "^16.9.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "webpack-merge": "^6.0.1"
   },
   "browserslist": [
     "last 5 versions"
