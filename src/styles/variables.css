@@ -1,11 +1,11 @@
 :root {
-  --accent-color-main: rgba(255, 0, 112, 1);
-  --accent-color-second: rgba(255, 0, 112, 1);
+  --accent-color-main: rgb(255 0 112 / 100%);
+  --accent-color-second: rgb(255 0 112 / 100%);
   --bg-color: #000028;
-  --bg-image: url(../images/cover-image-dark.png);
-  --hover-menu-color: rgba(255, 0, 112, 0.4);
-  --text-color: rgba(241, 178, 206, 1);
-  --title-accent-color: rgba(0, 0, 40, 1);
-  --title-color: rgba(219, 0, 255, 1);
-  --title-shadow: rgba(255, 0, 112, 1);
+  --bg-image: url('../images/cover-image-dark.png');
+  --hover-menu-color: rgb(255 0 112 / 40%);
+  --text-color: rgb(241 178 206 / 100%);
+  --title-accent-color: rgb(0 0 40 / 100%);
+  --title-color: rgb(219 0 255 / 100%);
+  --title-shadow: rgb(255 0 112 / 100%);
 }

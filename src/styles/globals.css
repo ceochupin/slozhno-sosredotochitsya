@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'IBM Plex mono';
-  src: url(../fonts/IBMPlexMono-Regular.woff) format('woff');
+  src: url('../fonts/IBMPlexMono-Regular.woff') format('woff');
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'IBM Plex mono';
-  src: url(../fonts/IBMPlexMono-Bold.woff) format('woff');
+  src: url('../fonts/IBMPlexMono-Bold.woff') format('woff');
   font-weight: 700;
   font-display: swap;
 }
@@ -52,7 +52,7 @@ picture {
 
 button,
 a {
-  color: currentColor;
+  color: currentcolor;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;

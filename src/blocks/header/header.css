@@ -10,38 +10,32 @@
 }
 
 @media (width >= 768px) {
-  
   .header {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 
 /* Меню */
 
 .header__theme-menu {
   justify-self: end;
   margin-block-start: 10px;
-  margin-inline: 10px;  
+  margin-inline: 10px;
 }
 
 @media (width >= 768px) {
-  
   .header__theme-menu {
-    grid-column: span 2;    
+    grid-column: span 2;
     margin-block-start: 20px;
     margin-inline: 20px;
   }
 }
 
 @media (width >= 1024px) {
-
   .header__theme-menu {
-    justify-self: center;
-    align-self: start;
+    place-self: start center;
   }
 }
-
 
 /* Сетка для кнопок меню */
 
@@ -51,12 +45,10 @@
 }
 
 @media (width >= 1024px) {
-
   .header__theme-menu-list {
     display: flex;
   }
 }
-
 
 /* Кнопки меню */
 
@@ -74,18 +66,17 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--hover-menu-color, rgb(255 0 112 / 0.4));
+  border: 1px solid var(--hover-menu-color, rgb(255 0 112 / 40%));
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid currentColor;
+  border-block-end: 1px solid currentcolor;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid currentColor;
+  border: 1px solid currentcolor;
   pointer-events: none;
 }
-
 
 /* Стили главного заголовока в шапке */
 
@@ -95,13 +86,11 @@
 }
 
 @media (width >= 768px) {
-
   .header__headline {
     margin-inline: 0;
     grid-column: span 2;
   }
 }
-
 
 /* Стили для дескриптора */
 
@@ -111,15 +100,12 @@
 }
 
 @media (width >= 768px) {
-
   .header__title {
     grid-column: 2;
-    margin-inline-start: 0;
-    margin-inline-end: 20px;
+    margin-inline: 0 20px;
     margin-block-end: 20px;
   }
 }
-
 
 /* Декоративный элемент REC */
 
@@ -129,24 +115,23 @@
   align-items: center;
   gap: 10px;
   color: var(--accent-color-main, rgba(255 0 112));
-  line-height: 1.5625;;
+  line-height: 1.5625;
   text-transform: uppercase;
   inset-inline-end: 20px;
   inset-block-start: 10px;
 }
 
 .header__decorated::after {
-  content: "";
+  content: '';
   display: block;
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px currentColor;
-  background-color: currentColor;
+  box-shadow: 0 0 4px 2px currentcolor;
+  background-color: currentcolor;
   inline-size: 9px;
   block-size: 9px;
 }
 
 @media (width >= 768px) {
-
   .header__decorated {
     inset-inline-end: 30px;
     inset-block-start: 20px;

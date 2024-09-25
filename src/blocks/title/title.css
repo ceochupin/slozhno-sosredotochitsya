@@ -4,13 +4,11 @@
   font-size: inherit;
 }
 
-
 /* основной заголовок */
 
 .title--base {
   color: var(--accent-color-second, rgb(255 0 112));
 }
-
 
 /* заголовки с бэкграундом */
 
@@ -19,13 +17,11 @@
   background-color: var(--accent-color-second, rgb(255 0 112));
 }
 
-
 /* жирный заголовок */
 
 .title__decor--strong {
   font-weight: 700;
 }
-
 
 /* тонкий заголовок */
 

@@ -5,11 +5,11 @@
   line-height: 0.9;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color-second, rgb(255 0 112));
-  color: currentColor;
+  color: currentcolor;
 }
 
 .link:hover {
-  border-block-end: 1px solid currentColor;
+  border-block-end: 1px solid currentcolor;
 }
 
 .link:focus {
@@ -18,5 +18,5 @@
 
 .link:focus-visible {
   border: none;
-  outline: 1px solid currentColor;
+  outline: 1px solid currentcolor;
 }

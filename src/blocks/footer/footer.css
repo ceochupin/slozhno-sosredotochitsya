@@ -2,12 +2,10 @@
 
 .footer {
   display: grid;
-  align-items: center;
-  justify-items: center;
+  place-items: center center;
   block-size: 100dvb;
   min-block-size: 668px;
 }
-
 
 /* Стилизация заголовка в подвале */
 
