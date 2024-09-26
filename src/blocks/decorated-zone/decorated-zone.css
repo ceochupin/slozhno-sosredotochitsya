@@ -1,5 +1,4 @@
 /* Декоративные уголки для хэдера и футера */
-
 .decorated-zone {
   position: relative;
   color: var(--accent-color-main, rgb(255 0 112));

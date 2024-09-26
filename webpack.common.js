@@ -1,14 +1,16 @@
 const path = require('path');
 const autoprefixer = require('autoprefixer');
+const glob = require('glob');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/scripts/index.js',
   output: {
-    filename: 'bundle.[contenthash].js',
+    filename: 'scripts/[name].[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -23,10 +25,16 @@ module.exports = {
         test: /\.css$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
           {
             loader: 'postcss-loader',
             options: {
+              sourceMap: true,
               postcssOptions: {
                 plugins: [
                   autoprefixer()
@@ -47,8 +55,7 @@ module.exports = {
           filename: 'images/[name].[hash][ext]',
         },
         include: [
-          path.resolve(__dirname, 'src/images'),
-          path.resolve(__dirname, 'src/blocks')
+          path.resolve(__dirname, 'src/images')
         ]
       },
       {
@@ -66,7 +73,8 @@ module.exports = {
       inject: 'body'
     }),
     new MiniCssExtractPlugin({
-      filename: 'styles.[contenthash].css',
+      filename: 'styles/[name].[contenthash].css',
+      chunkFilename: 'styles/[id].[contenthash].css',
     }),
   ],
 };

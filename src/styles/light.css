@@ -1,13 +1,13 @@
 .page.theme_light {
-  --accent-color-main: rgb(53 52 48 / 100%);
-  --accent-color-second: rgb(255 141 203 / 100%);
-  --bg-color: rgb(255 241 247 / 100%);
+  --accent-color-main: rgb(53 52 48);
+  --accent-color-second: rgb(255 141 203);
+  --bg-color: rgb(255 241 247);
   --bg-image: url('../images/cover-image-light.png');
   --hover-menu-color: rgb(50 49 45 / 40%);
   --text-color: rgb(53 52 48 / 100%);
-  --title-accent-color: rgb(53 52 48 / 100%);
-  --title-color: rgb(255 194 230 / 100%);
-  --title-shadow: rgb(255 141 203 / 100%);
+  --title-accent-color: rgb(53 52 48);
+  --title-color: rgb(255 194 230);
+  --title-shadow: rgb(255 141 203%);
 }
 
 .theme_light .header__decorated {
@@ -16,15 +16,15 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --accent-color-main: rgb(53 52 48 / 100%);
-    --accent-color-second: rgb(255 141 203 / 100%);
-    --bg-color: rgb(255 241 247 / 100%);
+    --accent-color-main: rgb(53 52 48);
+    --accent-color-second: rgb(255 141 203);
+    --bg-color: rgb(255 241 247);
     --bg-image: url('../images/cover-image-light.png');
     --hover-menu-color: rgb(50 49 45 / 40%);
-    --text-color: rgb(53 52 48 / 100%);
-    --title-accent-color: rgb(53 52 48 / 100%);
-    --title-color: rgb(255 194 230 / 100%);
-    --title-shadow: rgb(255 141 203 / 100%);
+    --text-color: rgb(53 52 48);
+    --title-accent-color: rgb(53 52 48);
+    --title-color: rgb(255 194 230);
+    --title-shadow: rgb(255 141 203);
   }
 
   .theme_light .header__decorated,
@@ -33,14 +33,14 @@
   }
 }
 
-@media (prefers-color-scheme: light) and (width >= 64rem) {
+@media (prefers-color-scheme: light) and (width >= 1024px) {
   :root {
-    --title-shadow: rgb(255 0 112 / 100%);
+    --title-shadow: rgb(255 0 112);
   }
 }
 
-@media (width >= 64rem) {
+@media (width >= 1024px) {
   .page.theme_light {
-    --title-shadow: rgb(255 0 112 / 100%);
+    --title-shadow: rgb(255 0 112);
   }
 }

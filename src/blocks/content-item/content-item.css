@@ -1,5 +1,4 @@
 /* контентный блок заголовок + параграф */
-
 .content-item {
   display: grid;
   gap: 10px;

@@ -1,5 +1,4 @@
 /* Стили и сетка для шапки */
-
 .header {
   position: relative;
   display: grid;
@@ -16,7 +15,6 @@
 }
 
 /* Меню */
-
 .header__theme-menu {
   justify-self: end;
   margin-block-start: 10px;
@@ -38,7 +36,6 @@
 }
 
 /* Сетка для кнопок меню */
-
 .header__theme-menu-list {
   display: grid;
   gap: 10px;
@@ -51,7 +48,6 @@
 }
 
 /* Кнопки меню */
-
 .header__theme-menu-button {
   border: 1px solid transparent;
   padding: 2px 13px 4px;
@@ -79,7 +75,6 @@
 }
 
 /* Стили главного заголовока в шапке */
-
 .header__headline {
   margin-inline: 10px;
   text-shadow: 4px 4px 0 var(--title-shadow, rgb(255 0 112));
@@ -93,7 +88,6 @@
 }
 
 /* Стили для дескриптора */
-
 .header__title {
   margin-inline: 10px;
   margin-block-end: 10px;
@@ -108,7 +102,6 @@
 }
 
 /* Декоративный элемент REC */
-
 .header__decorated {
   position: absolute;
   display: flex;

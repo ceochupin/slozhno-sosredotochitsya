@@ -1,11 +1,11 @@
 .page.theme_dark {
-  --accent-color-main: rgb(255 0 112 / 100%);
-  --accent-color-second: rgb(255 0 112 / 100%);
-  --bg-color: rgb(0 0 40 / 100%);
+  --accent-color-main: rgb(255 0 112);
+  --accent-color-second: rgb(255 0 112);
+  --bg-color: rgb(0 0 40);
   --bg-image: url('../images/cover-image-dark.png');
   --hover-menu-color: rgb(255 0 112 / 40%);
-  --text-color: rgb(241 178 206 / 100%);
-  --title-accent-color: rgb(0 0 40 / 100%);
-  --title-color: rgb(219 0 255 / 100%);
-  --title-shadow: rgb(255 0 112 / 100%);
+  --text-color: rgb(241 178 206);
+  --title-accent-color: rgb(0 0 40);
+  --title-color: rgb(219 0 255);
+  --title-shadow: rgb(255 0 112);
 }

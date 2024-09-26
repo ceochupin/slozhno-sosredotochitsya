@@ -1,5 +1,4 @@
 /* Основной main-контейнер контентных блоков */
-
 .content {
   display: grid;
   gap: 50px;
@@ -16,7 +15,6 @@
 }
 
 /* Общие стили для контентной секции */
-
 .content__section {
   display: grid;
   gap: 20px;
@@ -35,14 +33,12 @@
 }
 
 /* секция блоков: заголовок + параграф */
-
 .content__articles {
   display: grid;
   gap: 20px;
 }
 
 /* Контент в виде списка */
-
 @media (width >= 1024px) {
   .content__articles--list {
     grid-column: span 2;
@@ -50,7 +46,6 @@
 }
 
 /* Контент в виде колонок */
-
 @media (width >= 768px) {
   .content__articles--column {
     grid-column: span 2;
@@ -66,7 +61,6 @@
 }
 
 /* Галлерея изображений */
-
 .content__gallery {
   display: grid;
   gap: 10px;
@@ -81,7 +75,6 @@
 }
 
 /* Стили для изображений */
-
 .content__gallery-image {
   display: block;
   object-fit: cover;
