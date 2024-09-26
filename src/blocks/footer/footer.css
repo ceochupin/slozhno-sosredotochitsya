@@ -1,7 +1,7 @@
 /* Стили для подвала */
 .footer {
   display: grid;
-  place-items: center center;
+  place-items: center;
   block-size: 100dvb;
   min-block-size: 668px;
 }
