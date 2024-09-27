@@ -2,7 +2,7 @@
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
+  grid-template-rows: 1fr min-content 1fr;
   place-items: center end;
   block-size: 100dvb;
   min-block-size: 668px;
