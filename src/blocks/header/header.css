@@ -3,7 +3,7 @@
   position: relative;
   display: grid;
   grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
-  align-items: center;
+  place-items: center end;
   block-size: 100dvb;
   min-block-size: 668px;
   padding: 10px;
@@ -16,10 +16,6 @@
 }
 
 /* Меню */
-.header__theme-menu {
-  justify-self: end;
-}
-
 @media (width >= 1024px) {
   .header__theme-menu {
     place-self: start center;
@@ -68,6 +64,7 @@
 
 /* Стили главного заголовока в шапке */
 .header__headline {
+  justify-self: start;
   text-shadow: 4px 4px 0 var(--title-shadow, rgb(255 0 112));
 }
 
@@ -81,7 +78,6 @@
 @media (width >= 768px) {
   .header__title {
     inline-size: 50%;
-    justify-self: end;
   }
 }
 
