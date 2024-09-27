@@ -41,7 +41,8 @@
 /* Кнопки меню */
 .header__theme-menu-button {
   border: 1px solid transparent;
-  padding: 2px 13px 4px;
+  padding-block: 2px 4px;
+  padding-inline: 13px;
   color: var(--accent-color-main, rgb(255 0 112));
   line-height: 1;
   text-transform: lowercase;
