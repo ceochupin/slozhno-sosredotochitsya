@@ -1,0 +1,92 @@
+/* Основной main-контейнер контентных блоков */
+.content {
+  display: grid;
+  gap: 50px;
+  padding-block: 40px;
+  padding-inline: 10px;
+
+  @media (width >= 768px) {
+    gap: 80px;
+    padding-block: 60px;
+    padding-inline: 20px;
+  }
+
+  &__section {
+    display: grid;
+    gap: 20px;
+
+    @media (width >= 768px) {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    @media (width >= 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__articles {
+    display: grid;
+    gap: 20px;
+
+    &--list {
+      @media (width >= 1024px) {
+        grid-column: span 2;
+      }
+    }
+
+    &--column {
+      @media (width >= 768px) {
+        grid-column: span 2;
+      }
+
+      @media (width >= 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column: span 3;
+        align-items: start;
+      }
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    gap: 10px;
+
+    @media (width >= 768px) {
+      grid-column: span 3;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  }
+
+  &__gallery-image {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    inline-size: 100%;
+    block-size: 100%;
+
+    &:nth-child(1) {
+      @media (width >= 768px) {
+        grid-column: span 2;
+      }
+    }
+
+    &:nth-child(2) {
+      @media (width >= 768px) {
+        grid-row: span 2;
+      }
+    }
+
+    &:nth-child(3) {
+      @media (width >= 768px) {
+        grid-row: span 2;
+      }
+    }
+
+    &:nth-child(5) {
+      @media (width >= 768px) {
+        grid-column: span 2;
+      }
+    }
+  }
+}

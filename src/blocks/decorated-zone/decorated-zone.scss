@@ -1,0 +1,37 @@
+/* Декоративные уголки для хэдера и футера */
+.decorated-zone {
+  position: relative;
+  color: var(--accent-color-main, rgb(255 0 112));
+
+  &::before {
+    content: '';
+    position: absolute;
+    inline-size: 25px;
+    block-size: 25px;
+    border-inline-end: 1px solid currentcolor;
+    border-block-start: 1px solid currentcolor;
+    inset-inline-end: 10px;
+    inset-block-start: 10px;
+
+    @media (width >= 768px) {
+      inset-inline-end: 20px;
+      inset-block-start: 20px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inline-size: 25px;
+    block-size: 25px;
+    border-inline-start: 1px solid currentcolor;
+    border-block-end: 1px solid currentcolor;
+    inset-inline-start: 10px;
+    inset-block-end: 10px;
+
+    @media (width >= 768px) {
+      inset-inline-start: 20px;
+      inset-block-end: 20px;
+    }
+  }
+}

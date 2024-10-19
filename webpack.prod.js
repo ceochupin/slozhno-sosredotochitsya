@@ -4,6 +4,9 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = merge(common, {
+  output: {
+    publicPath: '/slozhno-sosredotochitsya/',
+  },
   mode: 'production',
   devtool: 'source-map',
   optimization: {

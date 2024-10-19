@@ -1,0 +1,21 @@
+/* размер шрифта контентных заголовоков из body */
+.title {
+  font-size: inherit;
+
+  &--base {
+    color: var(--accent-color-second, rgb(255 0 112));
+  }
+
+  &__decor {
+    color: var(--title-accent-color, rgb(0 0 40));
+    background-color: var(--accent-color-second, rgb(255 0 112));
+
+    &--strong {
+      font-weight: 700;
+    }
+
+    &--thin {
+      font-weight: 400;
+    }
+  }
+}

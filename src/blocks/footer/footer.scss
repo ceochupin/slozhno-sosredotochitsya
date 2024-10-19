@@ -1,0 +1,11 @@
+/* Стили для подвала */
+.footer {
+  display: grid;
+  place-items: center;
+  block-size: 100dvb;
+  min-block-size: 668px;
+
+  &__headline {
+    text-shadow: 2px 2px 0 var(--title-shadow, rgb(255 0 112));
+  }
+}

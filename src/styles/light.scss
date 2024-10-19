@@ -3,11 +3,11 @@
   --accent-color-second: rgb(255 141 203);
   --bg-color: rgb(255 241 247);
   --bg-image: url('../images/cover-image-light.png');
-  --hover-menu-color: rgb(50 49 45 / 40%);
-  --text-color: rgb(53 52 48 / 100%);
+  --hover-menu-color: rgb(50 49 45 / 0.4);
+  --text-color: rgb(53 52 48);
   --title-accent-color: rgb(53 52 48);
   --title-color: rgb(255 194 230);
-  --title-shadow: rgb(255 141 203%);
+  --title-shadow: rgb(255 141 203);
 }
 
 .theme_light .header__decorated {
@@ -20,7 +20,7 @@
     --accent-color-second: rgb(255 141 203);
     --bg-color: rgb(255 241 247);
     --bg-image: url('../images/cover-image-light.png');
-    --hover-menu-color: rgb(50 49 45 / 40%);
+    --hover-menu-color: rgb(50 49 45 / 0.4);
     --text-color: rgb(53 52 48);
     --title-accent-color: rgb(53 52 48);
     --title-color: rgb(255 194 230);
