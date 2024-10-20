@@ -15,7 +15,7 @@
     "fix": "npm run format && npm run lint:fix",
     "prebuild": "npm run fix",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --add -r https://github.com/ceochupin/slozhno-sosredotochitsya.git"
+    "deploy": "gh-pages -d dist"
   },
   "author": "Vladimir Chupin",
   "license": "MIT",
