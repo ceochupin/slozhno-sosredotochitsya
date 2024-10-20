@@ -15,7 +15,7 @@
     "fix": "npm run format && npm run lint:fix",
     "prebuild": "npm run fix",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npx gh-pages-clean && gh-pages -d dist"
   },
   "author": "Vladimir Chupin",
   "license": "MIT",
@@ -47,5 +47,5 @@
   "browserslist": [
     "last 10 versions"
   ],
-  "homepage": "https://ceochupin.github.io/slozhno-sosredotochitsya"
+  "homepage": "./"
 }
